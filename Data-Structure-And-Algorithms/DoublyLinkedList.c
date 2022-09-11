@@ -157,10 +157,15 @@ void Traverse()
     Nodetype *newnode;
     newnode  = head;
     printf("Elements in linked list: ");
-    while (newnode != NULL)
+    if(head==NULL)
+        printf("Empty list");
+    else
     {
-        printf("%d ", newnode->info);
-        newnode = newnode->next;
+        while (newnode != NULL)
+        {
+            printf("%d ", newnode->info);
+            newnode = newnode->next;
+        }
     }
 }
 
