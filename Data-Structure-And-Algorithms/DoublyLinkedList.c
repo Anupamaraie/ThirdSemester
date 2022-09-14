@@ -185,7 +185,7 @@ int main()
                 insertatbeg(num);
                 break;
             case 2:
-                printf("Enter the number to add: ");
+                printf(" Enter the number to add: ");
                 scanf("%d",&num);
                 insertatend(num);
                 break;

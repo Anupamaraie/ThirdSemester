@@ -13,7 +13,7 @@ Nodetype *last = NULL;
 Nodetype *getnode()
 {
     Nodetype *p;
-    p = (Nodetype *)malloc(sizeof(Nodetype));
+    p =(Nodetype *)malloc(sizeof(Nodetype));
     return (p);
 }
 
