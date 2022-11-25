@@ -75,7 +75,7 @@ void enqueue(q2 *q)
         
         for(int i = q->rear;i>=max;i--)
         {
-           q->items[i+1]=q->items[i];   
+           q->items[i]=q->items[i-1];   
         }
         q->items[max]=num1;
     }
