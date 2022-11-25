@@ -75,7 +75,7 @@ void enqueue(q2 *q)
         
         for(int i = q->rear;i>=max;i--)
         {
-            q->items[i+1]=q->items[i];
+           q->items[i+1]=q->items[i];   
         }
         q->items[max]=num1;
     }
@@ -84,7 +84,9 @@ void enqueue(q2 *q)
 int dequeue(q2 *q)
 {
     if(isEmpty(q))
-    printf("Queue is empty.\n");
+    {printf("Queue is empty.\n");
+    return 0;}
+    
     else
     return q->items[q->front++];
     
