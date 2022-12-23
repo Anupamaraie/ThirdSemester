@@ -39,7 +39,7 @@ int enqueue(cq *q)
         q->rear = (q->rear+1)%max;
         q->items[q->rear]=num;
         printf("Enqueued element is %d.\n",q->items[q->rear]);
-        c++; //remove c if not secrifying one cell
+        c++; //remove c if not sacrificing one cell
     }
 }
 int dequeue(cq *q)
@@ -48,7 +48,7 @@ int dequeue(cq *q)
     printf("Queue is empty.\n");
     else
     {
-        c--; //remove c if not secrifying one cell
+        c--; //remove c if not sacrificing one cell
         q->front = (q->front+1)%max;
         return q->items[q->front];
         
