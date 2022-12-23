@@ -5,8 +5,8 @@
 #include<math.h>
 #define max 20
 #define E 0.0001
-#define f(x) (exp(x)-x-2)
-#define f1(x) (exp(x)-1)
+#define f(x) (log10(x)-cos(x))
+#define f1(x) ((1/x)+sin(x))
 int main()
 {
 	int count=1;
@@ -30,7 +30,7 @@ int main()
 				count++;
 				if(count<max)goto begin;
 				else
-				printf("the process foesnt converge");
+				printf("the process doesnt converge");
 			}
 	}
 	return 0;
