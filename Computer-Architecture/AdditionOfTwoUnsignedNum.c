@@ -7,7 +7,7 @@ int main()
     printf("Enter two binary numbers:\n");
     scanf("%d%d",&num1,&num2);
 
-    while(num1 != 0 && num2 != 0)
+    while(num1 != 0 || num2 != 0)
     {
         sum[i++] = (num1 % 10 + num2%10 + car)%2;
         car = (num1%10+num2%10+car)/2;
