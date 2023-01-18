@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-unsigned int divide(unsigned int dividend, unsigned int divisor) {
-    unsigned int quotient = 0;
+int divide(int dividend,int divisor) {
+    int quotient = 0;
     int i;
     for (i = 31; i >= 0; i--) {
         quotient <<= 1;
@@ -14,11 +14,11 @@ unsigned int divide(unsigned int dividend, unsigned int divisor) {
 }
 
 int main() {
-    unsigned int dividend, divisor;
+    int dividend, divisor;
     printf("Enter the dividend: ");
-    scanf("%u", &dividend);
+    scanf("%d", &dividend);
     printf("Enter the divisor: ");
-    scanf("%u", &divisor);
+    scanf("%d", &divisor);
     printf("Quotient: %u\n", divide(dividend, divisor));
     return 0;
 }
